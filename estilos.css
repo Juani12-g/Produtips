@@ -117,24 +117,11 @@ ul, ol, li {
     font-size: 2rem;
 }
 
-.carousel-control-prev, .carousel-control-next {
-    width: 30px;
-    height: 30px;
-    font-size: 1.5rem;
-}
 @media (max-width: 768px) {
     .carousel-caption h5 {
         font-size: 1.5rem;
     }
 }
-@media (max-width: 768px) {
-    .carousel-control-prev, .carousel-control-next {
-        width: 25px;
-        height: 25px;
-        font-size: 1.2rem;
-    }
-}
-
 .card ul {
     padding-left: 1rem;
     margin: 0;
