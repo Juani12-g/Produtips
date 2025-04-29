@@ -113,6 +113,16 @@ ul, ol, li {
     object-fit: cover;
     width: 100%;
 }
+.carousel-caption h5 {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 1.5rem;
+    }
+}
+
 
 .card ul {
     padding-left: 1rem;
