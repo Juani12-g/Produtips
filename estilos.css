@@ -8,26 +8,25 @@
 }
 
 body {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #212529;
+    color: #f8f9fa;
     line-height: 1.6;
     padding: 20px;
 }
 
 header {
-    background: #111;
-    color: #ffffff;
+    background-color: #343a40;
+    color: #f8f9fa;
     text-align: center;
     padding: 20px;
     font-size: 1.5em;
-
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    background: #222;
+    background-color: #6c757d;
     padding: 10px;
 }
 
@@ -36,18 +35,18 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #f8f9fa;
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #007BFF;
+    color: #007bff;
 }
 
 section {
-    background: #fff;
+    background-color: #f8f9fa;
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
@@ -55,25 +54,26 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-    color: #ffffff;
+h2, h3 {
+    background-color: #495057;
+    color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
 }
 
-h2 {
-    color: #000000;
+h4, h5 {
+    color: #f8f9fa;
     margin-top: 20px;
 }
-h3 {
-    color: #ffffff;
-    margin-top: 20px;
-}
+
 p {
     margin-bottom: 15px;
+    color: #495057;
 }
 
 button {
-    background: #007BFF;
-    color: white;
+    background-color: #007bff;
+    color: #f8f9fa;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -82,22 +82,44 @@ button {
 }
 
 button:hover {
-    background: #0056b3;
+    background-color: #0056b3;
 }
 
 footer {
     text-align: center;
-    background: #111;
-    color: white;
-    padding: 10px;
+    background-color: #6c757d;
+    color: #f8f9fa;
+    padding: 20px;
     margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    clear: both;
 }
 
-p {
-    color: rgb(0, 0, 0) !important;
-}
 
 ul, ol, li {
-    color: #222 !important;
+    color: #495057;
     font-size: 1.1em;
+}
+
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f8f9fa;
+}
+
+.carousel-img {
+    max-height: 700px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card ul {
+    padding-left: 1rem;
+    margin: 0;
+    list-style-position: inside;
+}
+
+label {
+    color: #495057; 
 }
