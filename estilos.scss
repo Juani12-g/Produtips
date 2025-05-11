@@ -1,0 +1,152 @@
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$light-color: #f8f9fa;
+$dark-color: #212529;
+$background-color: #343a40;
+$header-color: #495057;
+$font-family: 'Montserrat', sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family;
+}
+
+body {
+    background-color: $dark-color;
+    color: $light-color;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: $background-color;
+    color: $light-color;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+nav {
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        background-color: $secondary-color;
+        padding: 10px;
+
+        li {
+            margin: 0 15px;
+
+            a {
+                color: $light-color;
+                text-decoration: none;
+                font-weight: 600;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 30px !important;
+        height: 30px !important;
+        background-size: 100% 100% !important;
+
+        @media (max-width: 768px) {
+            width: 20px !important;
+            height: 20px !important;
+        }
+    }
+}
+
+section {
+    background-color: $light-color;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    h2, h3 {
+        background-color: $header-color;
+        color: $light-color;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    h4, h5 {
+        color: $light-color;
+        margin-top: 20px;
+    }
+
+    p {
+        margin-bottom: 15px;
+        color: $header-color;
+    }
+
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: $light-color;
+
+        h5 {
+            font-size: 2rem;
+
+            @media (max-width: 768px) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .carousel-img {
+        max-height: 700px;
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+button {
+    background-color: $primary-color;
+    color: $light-color;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+        background-color: darken($primary-color, 10%);
+    }
+}
+
+footer {
+    text-align: center;
+    background-color: $secondary-color;
+    color: $light-color;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    clear: both;
+}
+
+ul, ol, li {
+    color: $header-color;
+    font-size: 1.1em;
+}
+
+.card ul {
+    padding-left: 1rem;
+    margin: 0;
+    list-style-position: inside;
+}
+
+label {
+    color: $header-color;
+}
